@@ -87,8 +87,11 @@ experience:
 
 education:
   - institution: Southern Federal University, Rostov-on-Don
-    degree: Business Informatics (Bachelor's)
-    period: "2019"
+    degree: IMEESS, Business Informatics (Bachelor's)
+    period: "2015-2019"
+  - institution: Taganrog Institute of Management and Economics (TIUiE), Taganrog
+    degree: Vocational college diploma, Economics and Accounting
+    period: "2012-2015"
 
 languages:
   - language: Russian
