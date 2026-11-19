@@ -260,6 +260,11 @@ const personJsonLd = data?.name ? {
                       {e.description.map((d) => <li>{normalizeBullet(d)}</li>)}
                     </ul>
                   )}
+                  {Array.isArray(e.stack) && e.stack.length > 0 && (
+                    <ul class="tags">
+                      {e.stack.map((s) => <li class="tag">{s}</li>)}
+                    </ul>
+                  )}
                 </article>
               ))}
             </div>

@@ -39,7 +39,7 @@ downloads:
     items: [pdf, docx]
   - group: online
     links:
-      - label: hh.ru
+      - label: HeadHunter
         url: https://hh.ru/resume/85603fd6ff10d8e9d00039ed1f487236707146
       - label: Habr Career
         url: https://career.habr.com/hikmetmehdi
