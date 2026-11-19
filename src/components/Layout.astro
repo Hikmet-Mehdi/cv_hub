@@ -13,7 +13,7 @@ import { makeT } from '../scripts/t';
 
 // Change theme here
 //
-import '../styles/themes/light.css';
+import '../styles/themes/frosted.css';
 //
 // Change theme here
 
@@ -181,16 +181,20 @@ const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
     <meta name="twitter:image" content={metaImage} />
 
     <script is:inline>
+      // Light = bundled frosted.css; dark = /themes/nordic.css appended on top.
+      // `?theme=` still wins for previews; otherwise saved choice, else OS preference.
       const params = new URLSearchParams(window.location.search);
-      const theme = params.get('theme');
-      const allowed = ['frosted', 'light', 'nordic', 'peachy'];
-      if (theme && allowed.includes(theme)) {
+      const saved = localStorage.getItem('theme');
+      const mode = saved ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      const q = params.get('theme');
+      const theme = ['frosted', 'light', 'nordic', 'peachy'].includes(q) ? q : (mode === 'dark' ? 'nordic' : null);
+      document.documentElement.dataset.theme = theme === 'nordic' ? 'dark' : 'light';
+      if (theme) {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
+        link.id = 'theme-css';
         link.href = `${document.documentElement.dataset.base}/themes/${theme}.css`;
-        document.addEventListener('DOMContentLoaded', () => {
-          document.head.appendChild(link);
-        });
+        document.head.appendChild(link);
       }
     </script>
   </head>
@@ -233,6 +237,7 @@ const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
           {langLinks.map(l => (
             <a class={l.active ? 'active' : ''} href={l.href}>{l.label}</a>
           ))}
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme"></button>
         </div>
       </div>
     </header>
@@ -240,6 +245,23 @@ const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
     <main>
       <slot />
     </main>
+
+    <script>
+      // Theme toggle: dark = nordic.css, light = bundled frosted.css.
+      document.getElementById('theme-toggle')?.addEventListener('click', () => {
+        const dark = document.documentElement.dataset.theme !== 'dark';
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        document.getElementById('theme-css')?.remove();
+        if (dark) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.id = 'theme-css';
+          link.href = `${document.documentElement.dataset.base}/themes/nordic.css`;
+          document.head.appendChild(link);
+        }
+      });
+    </script>
 
     <script>
       // Dropdown: click-toggle + click-outside to close.

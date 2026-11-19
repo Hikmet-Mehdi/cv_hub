@@ -1113,3 +1113,21 @@ a:hover { text-decoration: underline; }
     max-width: 100% !important;
   }
 }
+.theme-toggle {
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+  transition: color var(--t), background var(--t);
+}
+
+.theme-toggle::before { content: '☾'; }
+[data-theme='dark'] .theme-toggle::before { content: '☀'; }
+
+.theme-toggle:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
