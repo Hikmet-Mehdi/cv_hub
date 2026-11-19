@@ -29,6 +29,14 @@ cv:
     en: "Skills"
     ru: "Навыки"
     zh: "技能"
+  education:
+    en: "Education"
+    ru: "Образование"
+    zh: "教育背景"
+  languages:
+    en: "Languages"
+    ru: "Знание языков"
+    zh: "语言能力"
   experience:
     en: "Experience"
     ru: "Опыт"
@@ -45,6 +53,10 @@ cv:
     en: "For people"
     ru: "Людям"
     zh: "给人看"
+  downloads_online:
+    en: "Online"
+    ru: "Онлайн"
+    zh: "在线"
   downloads_ats:
     en: "For ATS"
     ru: "Для ATS"

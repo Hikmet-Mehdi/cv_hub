@@ -209,7 +209,9 @@ const site = defineCollection({
       z.array(downloadFormat),
       z.array(z.object({
         group: z.string().nullable().optional().default(null),
-        items: z.array(downloadFormat),
+        items: z.array(downloadFormat).optional().default([]),
+        // External links (e.g. a job-board resume), rendered as ghost buttons.
+        links: z.array(z.object({ label: z.string(), url: z.string().url() })).optional().default([]),
       })),
     ]).optional().default(['pdf', 'docx']),
     // Opt-out "Made with CV Hub" footer credit, next to the GitHub link —
