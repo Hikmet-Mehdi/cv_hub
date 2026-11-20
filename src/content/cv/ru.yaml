@@ -1,12 +1,15 @@
 name: Мехди-заде Хикмет Искендер оглы
-title: Fullstack-разработчик - TypeScript · React · Next.js · Node.js · Nest.js
+title: Fullstack-разработчик (React / Node.js / TypeScript)
+location: Ростов-на-Дону, Россия
 
 summary: >
-  Fullstack-разработчик с 5+ годами коммерческого опыта: React и TypeScript на фронтенде,
-  Node.js / NestJS на бэкенде. Работал над продуктами для международных клиентов
-  (Австралия, Швеция, ОАЭ, Швейцария) и корпоративными системами — от micro-frontend
-  и FSD-архитектуры до Kafka-микросервисов и аналитики на ClickHouse.
-  Активно использую AI (Cursor, Claude) для ускорения разработки.
+  Fullstack-разработчик (JavaScript / TypeScript) с опытом коммерческой разработки более 5 лет.
+  Разрабатываю frontend на React и Next.js, backend на Node.js, NestJS и Express. Работаю с
+  PostgreSQL, MongoDB, ClickHouse, GraphQL, REST API, Kafka, Docker и AWS. Строю архитектуру
+  Feature-Sliced Design (FSD), micro-frontend (single-spa, Module Federation) и monorepo на Nx;
+  делаю дашборды и аналитические интерфейсы на ECharts. Реализовал 6 микросервисов на Kafka
+  и Docker, разработал и поддерживал 7 коммерческих проектов для международных клиентов.
+  Использую AI-инструменты в разработке: Cursor (Skills, Rules, Commands), MCP-серверы, Claude.
 
 contacts:
   - label: Email
@@ -19,11 +22,11 @@ achievements:
   - Разработал 6 микросервисов на Kafka и Docker, оптимизировал запросы ClickHouse на больших объёмах данных
   - Разработал и поддерживал 7 коммерческих проектов для клиентов из Австралии, Швеции, ОАЭ и Швейцарии
   - Опубликовал 5 собственных npm-пакетов (Vite)
-  - Разрабатываю Cursor Skills и MCP-интеграции (в т.ч. self-hosted Jira через mcp-atlassian) для команды
+  - Пишу Cursor Skills, Rules и Commands, настраиваю MCP-серверы для команды
 
 skills:
   - group: Языки
-    items: [TypeScript, JavaScript]
+    items: [JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3, SCSS]
 
   - group: Frontend
     items: [React, Next.js, PWA, Vite, Ant Design, Tailwind CSS, SCSS, styled-components, ECharts]
@@ -32,16 +35,22 @@ skills:
     items: [Redux Toolkit, RTK Query, MobX, FSD, single-spa, Module Federation, Nx]
 
   - group: Backend и API
-    items: [Node.js, Express, NestJS, REST API, GraphQL, Kafka, Prisma, Sequelize]
+    items: [Node.js, Express, NestJS, REST API, GraphQL, Kafka, Микросервисы, Prisma, Sequelize]
 
   - group: Базы данных
     items: [PostgreSQL, ClickHouse, MongoDB]
 
   - group: Инфраструктура
-    items: [Linux, Git, Docker, EC2, S3, Route53, Netlify]
+    items: [Linux, Git, Docker, CI/CD, EC2, S3, Route53, Netlify]
 
   - group: AI-инструменты
-    items: [Cursor, Claude, MCP, CodeGraph]
+    items: [Cursor, Claude, MCP, CodeGraph, Graphify]
+
+  - group: Интеграции
+    items: [Stripe, PayPal, Agora.io, BankID, MetaMask, Swagger / OpenAPI, API рекламных платформ]
+
+  - group: Прочее
+    items: [SEO (Schema.org / Open Graph), Безопасность frontend, Менторинг, Управление проектами]
 
 experience:
 
@@ -57,7 +66,8 @@ experience:
       - Разрабатывал проекты на micro-frontend (single-spa, Module Federation)
       - Адаптировал код под требования информационной безопасности, успешно прошёл проверки
       - Дорабатывал PWA-приложения
-    stack: [React, TypeScript, Vite, Ant Design, SCSS, Nx, ECharts, single-spa, Module Federation, FSD, MobX, Redux Toolkit, Cursor, MCP]
+      - Писал Cursor Skills, Rules и Commands, настраивал MCP-серверы под нужды проекта
+    stack: [React, TypeScript, Vite, Ant Design, SCSS, Nx, ECharts, single-spa, Module Federation, FSD, MobX, Redux Toolkit, RTK Query, Cursor, Claude, MCP]
 
   - company: FIRECODE
     role: Fullstack-разработчик
@@ -83,13 +93,13 @@ experience:
       - Настроил деплой на AWS (EC2, S3, Route53), фронтенд — на Netlify
       - Спроектировал и оптимизировал структуру БД (PostgreSQL, MongoDB)
       - Менторил junior-разработчиков на двух проектах; разрабатывал продукты с нуля, самостоятельно выбирая стек
-    stack: [React, Next.js, Node.js, Express, PostgreSQL, MongoDB, Ant Design, styled-components, SCSS, Prisma, Sequelize, Redux Toolkit, AWS]
+    stack: [React, Next.js, Node.js, Express, PostgreSQL, MongoDB, Ant Design, styled-components, SCSS, Prisma, Sequelize, Redux Toolkit, AWS, Netlify]
 
 education:
   - institution: Южный федеральный университет, Ростов-на-Дону
-    degree: ИУЭС, Бизнес-информатика (высшее)
+    degree: Институт управления в экономических, экологических и социальных системах (ИУЭС), Бизнес-информатика (высшее)
     period: "2015-2019"
-  - institution: ТИУиЭ, Таганрог
+  - institution: Таганрогский институт управления и экономики (ТИУиЭ), Таганрог
     degree: СПО, Экономика и бухгалтерский учет (среднее специальное)
     period: "2012-2015"
 
@@ -97,4 +107,4 @@ languages:
   - language: Русский
     level: Родной
   - language: Английский
-    level: A2 — Элементарный
+    level: A2 — Элементарный, техническая документация

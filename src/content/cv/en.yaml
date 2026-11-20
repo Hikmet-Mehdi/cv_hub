@@ -1,12 +1,15 @@
 name: Hikmet Mehdi-zade
-title: Fullstack Developer - TypeScript · React · Next.js · Node.js · Nest.js
+title: Fullstack Developer (React / Node.js / TypeScript)
+location: Rostov-on-Don, Russia
 
 summary: >
-  Fullstack developer with 5+ years of commercial experience: React and TypeScript on the frontend,
-  Node.js / NestJS on the backend. Built products for international clients
-  (Australia, Sweden, UAE, Switzerland) and enterprise systems — from micro-frontends
-  and FSD architecture to Kafka microservices and ClickHouse analytics.
-  Actively use AI (Cursor, Claude) to speed up development.
+  Fullstack developer (JavaScript / TypeScript) with 5+ years of commercial experience.
+  Frontend in React and Next.js, backend in Node.js, NestJS and Express. Work with
+  PostgreSQL, MongoDB, ClickHouse, GraphQL, REST API, Kafka, Docker and AWS. Build
+  Feature-Sliced Design (FSD) architecture, micro-frontends (single-spa, Module Federation)
+  and Nx monorepos; dashboards and analytics UIs on ECharts. Delivered 6 Kafka/Docker
+  microservices and 7 commercial projects for international clients. Use AI tools in
+  development: Cursor (Skills, Rules, Commands), MCP servers, Claude.
 
 contacts:
   - label: Email
@@ -19,11 +22,11 @@ achievements:
   - Built 6 microservices on Kafka and Docker; optimized ClickHouse queries over large datasets
   - Built and maintained 7 commercial projects for clients in Australia, Sweden, UAE and Switzerland
   - Published 5 custom npm packages (Vite)
-  - Develop Cursor Skills and MCP integrations (incl. self-hosted Jira via mcp-atlassian) for the team
+  - Write Cursor Skills, Rules and Commands and configure MCP servers for the team
 
 skills:
   - group: Languages
-    items: [TypeScript, JavaScript]
+    items: [JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3, SCSS]
 
   - group: Frontend
     items: [React, Next.js, PWA, Vite, Ant Design, Tailwind CSS, SCSS, styled-components, ECharts]
@@ -32,16 +35,22 @@ skills:
     items: [Redux Toolkit, RTK Query, MobX, FSD, single-spa, Module Federation, Nx]
 
   - group: Backend & API
-    items: [Node.js, Express, NestJS, REST API, GraphQL, Kafka, Prisma, Sequelize]
+    items: [Node.js, Express, NestJS, REST API, GraphQL, Kafka, Microservices, Prisma, Sequelize]
 
   - group: Databases
     items: [PostgreSQL, ClickHouse, MongoDB]
 
   - group: Infrastructure
-    items: [Linux, Git, Docker, EC2, S3, Route53, Netlify]
+    items: [Linux, Git, Docker, CI/CD, EC2, S3, Route53, Netlify]
 
   - group: AI Tooling
-    items: [Cursor, Claude, MCP, CodeGraph]
+    items: [Cursor, Claude, MCP, CodeGraph, Graphify]
+
+  - group: Integrations
+    items: [Stripe, PayPal, Agora.io, BankID, MetaMask, Swagger / OpenAPI, Advertising platform APIs]
+
+  - group: Other
+    items: [SEO (Schema.org / Open Graph), Frontend security, Mentoring, Project management]
 
 experience:
 
@@ -57,7 +66,8 @@ experience:
       - Developed micro-frontend projects (single-spa, Module Federation)
       - Adapted code to information security requirements and passed security audits
       - Maintained and extended PWA applications
-    stack: [React, TypeScript, Vite, Ant Design, SCSS, Nx, ECharts, single-spa, Module Federation, FSD, MobX, Redux Toolkit, Cursor, MCP]
+      - Wrote Cursor Skills, Rules and Commands; configured MCP servers for project needs
+    stack: [React, TypeScript, Vite, Ant Design, SCSS, Nx, ECharts, single-spa, Module Federation, FSD, MobX, Redux Toolkit, RTK Query, Cursor, Claude, MCP]
 
   - company: FIRECODE
     role: Fullstack Developer
@@ -83,11 +93,11 @@ experience:
       - Set up deployment on AWS (EC2, S3, Route53) and Netlify for the frontend
       - Designed and optimized database schemas (PostgreSQL, MongoDB)
       - Mentored junior developers on two projects; built products from scratch, choosing the stack independently
-    stack: [React, Next.js, Node.js, Express, PostgreSQL, MongoDB, Ant Design, styled-components, SCSS, Prisma, Sequelize, Redux Toolkit, AWS]
+    stack: [React, Next.js, Node.js, Express, PostgreSQL, MongoDB, Ant Design, styled-components, SCSS, Prisma, Sequelize, Redux Toolkit, AWS, Netlify]
 
 education:
   - institution: Southern Federal University, Rostov-on-Don
-    degree: IMEESS, Business Informatics (Bachelor's)
+    degree: Institute of Management in Economic, Ecological and Social Systems (IMEESS), Business Informatics (Higher education)
     period: "2015-2019"
   - institution: Taganrog Institute of Management and Economics (TIUiE), Taganrog
     degree: Vocational college diploma, Economics and Accounting
@@ -97,4 +107,4 @@ languages:
   - language: Russian
     level: Native
   - language: English
-    level: A2 — Elementary
+    level: A2 — Elementary, technical documentation
