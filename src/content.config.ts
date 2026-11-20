@@ -66,6 +66,7 @@ const cv = defineCollection({
     summary: z.string().optional().default(''),
     contacts: z.array(linkSchema).optional().default([]),
     achievements: z.array(z.string()).optional().default([]),
+    tech_experience: z.array(z.object({ tech: z.string(), years: z.string() })).optional().default([]),
     skills: z.array(cvSkillGroupSchema).optional().default([]),
     experience: z.array(cvExperienceSchema).optional().default([]),
     education: z.array(cvEducationSchema).optional().default([]),

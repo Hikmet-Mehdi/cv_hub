@@ -24,6 +24,20 @@ achievements:
   - Published 5 custom npm packages (Vite)
   - Write Cursor Skills, Rules and Commands and configure MCP servers for the team
 
+tech_experience:
+  - { tech: "React, TypeScript", years: "5+ years" }
+  - { tech: "Next.js", years: "3 years" }
+  - { tech: "Ant Design", years: "3 years" }
+  - { tech: "SCSS / Sass", years: "3 years" }
+  - { tech: "Node.js, PostgreSQL", years: "3 years" }
+  - { tech: "Redux / Redux Toolkit", years: "2–3 years" }
+  - { tech: "MobX", years: "2–3 years" }
+  - { tech: "GraphQL", years: "2 years" }
+  - { tech: "styled-components", years: "1–2 years" }
+  - { tech: "NestJS, Kafka, ClickHouse", years: "1 year" }
+  - { tech: "Tailwind CSS", years: "1 year" }
+  - { tech: "Cursor and AI tools", years: "1 year" }
+
 skills:
   - group: Languages
     items: [JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3, SCSS]

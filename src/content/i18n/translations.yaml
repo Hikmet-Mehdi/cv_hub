@@ -45,6 +45,15 @@ cv:
     en: "Achievements"
     ru: "Достижения"
     zh: "成就"
+  tech_experience:
+    en: "Commercial experience by technology"
+    ru: "Коммерческий опыт по технологиям"
+  tech_exp_col_tech:
+    en: "Technology"
+    ru: "Технология"
+  tech_exp_col_years:
+    en: "Experience"
+    ru: "Опыт"
   download:
     en: "Download"
     ru: "Скачать"

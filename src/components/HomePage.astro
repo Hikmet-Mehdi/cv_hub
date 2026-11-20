@@ -24,6 +24,7 @@ const t = {
   skills:       tProp.skills       ?? 'Skills',
   experience:   tProp.experience   ?? 'Experience',
   achievements: tProp.achievements ?? 'Achievements',
+  techExperience: tProp.techExperience ?? 'Commercial experience by technology',
   education:    tProp.education    ?? 'Education',
   languages:    tProp.languages    ?? 'Languages',
   downloads:    tProp.downloads    ?? 'Download',
@@ -88,6 +89,7 @@ const contacts     = Array.isArray(data?.contacts)    ? data.contacts    : [];
 const rawSkills    = Array.isArray(data?.skills)      ? data.skills      : [];
 const experience   = Array.isArray(data?.experience)  ? data.experience  : [];
 const achievements = Array.isArray(data?.achievements)? data.achievements: [];
+const techExperience = Array.isArray(data?.tech_experience) ? data.tech_experience : [];
 const education    = Array.isArray(data?.education)   ? data.education   : [];
 const languages    = Array.isArray(data?.languages)   ? data.languages   : [];
 
@@ -239,6 +241,18 @@ const personJsonLd = data?.name ? {
             <ul class="list">
               {achievements.map((a) => <li>{a}</li>)}
             </ul>
+          </article>
+        )}
+
+        {techExperience.length > 0 && (
+          <article class="card card--tech-experience">
+            <h2 class="h2">{t.techExperience}</h2>
+            <table class="techtable">
+              <thead><tr><th>{t2('cv.tech_exp_col_tech')}</th><th>{t2('cv.tech_exp_col_years')}</th></tr></thead>
+              <tbody>
+                {techExperience.map((r) => <tr><td>{r.tech}</td><td>{r.years}</td></tr>)}
+              </tbody>
+            </table>
           </article>
         )}
 
